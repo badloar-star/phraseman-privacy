@@ -1,47 +1,537 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
-  <title>Terms of Use — Phraseman</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use – Phraseman by Knowly</title>
   <style>
-    body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding: 1em; max-width: 700px; margin: 0 auto; line-height: 1.6; }
-    h1 { font-size: 1.4em; }
-    strong { display: block; margin-top: 1.2em; }
-    a { color: #1a73e8; }
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2a2d3a;
+      --text: #e8eaf0;
+      --text-secondary: #9196a8;
+      --accent: #5b7fff;
+      --warning: #f0a020;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+    header { margin-bottom: 48px; border-bottom: 1px solid var(--border); padding-bottom: 32px; }
+    header h1 { font-size: 2rem; font-weight: 800; color: var(--text); margin-bottom: 8px; }
+    header .meta { color: var(--text-secondary); font-size: 0.9rem; }
+    header .app-name { color: var(--accent); font-weight: 700; }
+
+    h2 { font-size: 1.2rem; font-weight: 700; color: var(--text); margin: 36px 0 10px; }
+    h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin: 20px 0 6px; }
+    p { color: var(--text-secondary); margin-bottom: 12px; }
+    ul, ol { color: var(--text-secondary); padding-left: 22px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--warning);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .highlight-box p { margin: 0; }
+    .highlight-box strong { color: var(--warning); }
+
+    .caps-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+    .caps-box strong { color: var(--text); display: block; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem; }
+
+    .section { margin-bottom: 8px; }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 60px 0 40px;
+    }
+
+    .localized {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-top: 40px;
+    }
+    .localized h2 { font-size: 1rem; color: var(--text-secondary); margin: 0 0 8px; font-weight: 700; }
+    .localized p, .localized li { color: var(--text-secondary); font-size: 0.85rem; }
+    .localized .lang-section { margin-bottom: 28px; }
+    .localized .lang-section:last-child { margin-bottom: 0; }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f6fa;
+        --surface: #ffffff;
+        --border: #e0e3ed;
+        --text: #1a1d27;
+        --text-secondary: #5a5f73;
+      }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 24px 16px 60px; }
+    }
   </style>
 </head>
 <body>
-<h1>Terms of Use</h1>
-<p>Last updated: 2026-04-07</p>
-<p>By downloading or using the <strong style="display:inline">Phraseman</strong> app, these terms automatically apply to you. Please read them carefully before using the app.</p>
+<div class="container">
+  <header>
+    <h1>Terms of Use</h1>
+    <p class="meta">
+      Application: <span class="app-name">Phraseman</span> &nbsp;|&nbsp;
+      Developer: <span class="app-name">Knowly</span> &nbsp;|&nbsp;
+      Last updated: <strong>April 15, 2026</strong>
+    </p>
+  </header>
 
-<strong>1. License</strong>
-<p>Knowly grants you a non-exclusive, non-transferable, revocable license to use the Application for your personal, non-commercial purposes. You may not copy, modify, or distribute the Application or its content.</p>
+  <!-- ══════════════════════════════════════════ 1 ══ -->
+  <div class="section">
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By downloading, installing, or using the <strong>Phraseman</strong> mobile application
+      ("App") developed by <strong>Knowly</strong> ("we", "us", "our"), you ("User", "you")
+      agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms,
+      you must not use the App.
+    </p>
+    <p>
+      These Terms constitute a legally binding agreement between you and Knowly.
+      You represent that you are at least 13 years of age and have the legal capacity to
+      enter into this agreement.
+    </p>
+  </div>
 
-<strong>2. Subscriptions</strong>
-<p>Phraseman offers optional auto-renewable subscriptions (monthly and yearly) that unlock premium features. Subscriptions are billed through your Apple ID or Google Play account. They automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage and cancel subscriptions in your device's App Store or Google Play account settings.</p>
-<p>A free trial may be offered. Unused portions of a free trial are forfeited upon purchase of a subscription.</p>
+  <!-- ══════════════════════════════════════════ 2 ══ -->
+  <div class="section">
+    <h2>2. License to Use the App</h2>
+    <p>
+      Subject to your compliance with these Terms, Knowly grants you a limited,
+      non-exclusive, non-transferable, revocable license to install and use the App
+      on a device you own or control, solely for your personal, non-commercial,
+      educational purposes.
+    </p>
+    <p>You may not:</p>
+    <ul>
+      <li>Copy, modify, distribute, sell, or sublicense the App or any part of it</li>
+      <li>Reverse engineer, decompile, or attempt to extract the source code</li>
+      <li>Remove, alter, or obscure any proprietary notices</li>
+      <li>Use the App to develop a competing product or service</li>
+      <li>Transfer your license to any third party</li>
+    </ul>
+  </div>
 
-<strong>3. User Content</strong>
-<p>The Application allows you to enter a name/nickname. You agree not to use offensive, illegal, or inappropriate names.</p>
+  <!-- ══════════════════════════════════════════ 3 ══ -->
+  <div class="section">
+    <h2>3. No Account Required — Anonymous Access</h2>
+    <p>
+      The App does not require registration, email address, or phone number.
+      You are identified by an anonymous session generated via Firebase Anonymous Authentication.
+      This means you do not have a traditional account that can be recovered if you reinstall
+      the App or switch devices. <strong>Cloud data associated with your anonymous session
+      may be lost if the session is deleted.</strong>
+    </p>
+  </div>
 
-<strong>4. Intellectual Property</strong>
-<p>All content in the Application (lesson texts, UI, graphics, audio) is owned by Knowly and protected by copyright. You may not reproduce or distribute this content without permission.</p>
+  <!-- ══════════════════════════════════════════ 4 ══ -->
+  <div class="section">
+    <h2>4. User-Generated Content — Nickname</h2>
+    <p>
+      When you participate in the global leaderboard or club/league system, you may choose
+      a public nickname ("Username"). By selecting a Username, you agree that:
+    </p>
+    <ul>
+      <li>Your Username, XP score, streak count, league tier, and avatar will be
+          <strong>publicly visible to all users of the App</strong></li>
+      <li>Your Username will not contain offensive, defamatory, threatening, obscene,
+          hateful, discriminatory, or otherwise inappropriate content</li>
+      <li>Your Username will not impersonate any person, entity, or brand</li>
+      <li>Knowly reserves the right to remove or change any Username that violates these Terms,
+          without notice and without liability</li>
+    </ul>
+    <p>
+      You grant Knowly a worldwide, royalty-free, perpetual license to display your Username
+      within the App for leaderboard and social features.
+    </p>
+  </div>
 
-<strong>5. Disclaimer</strong>
-<p>The Application is provided "AS IS" without warranties of any kind. Knowly does not guarantee that the Application will be error-free or uninterrupted.</p>
+  <!-- ══════════════════════════════════════════ 5 ══ -->
+  <div class="section">
+    <h2>5. Prohibited Conduct</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose or in violation of any applicable law</li>
+      <li>Manipulate, cheat, or exploit bugs to gain unfair advantages in the leaderboard or gamification systems</li>
+      <li>Attempt to gain unauthorized access to any part of our systems or infrastructure</li>
+      <li>Use automated bots, scripts, or other automated means to interact with the App</li>
+      <li>Harass, abuse, or harm other users</li>
+      <li>Post or transmit content that infringes the intellectual property rights of others</li>
+      <li>Interfere with or disrupt the integrity of the App's services</li>
+      <li>Attempt to reverse engineer or circumvent subscription verification</li>
+      <li>Use the App if you are under 13 years of age</li>
+    </ul>
+    <p>
+      Violation of these prohibitions may result in immediate termination of your access
+      to the App, including removal from the leaderboard, at Knowly's sole discretion.
+    </p>
+  </div>
 
-<strong>6. Limitation of Liability</strong>
-<p>To the extent permitted by law, Knowly shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Application.</p>
+  <!-- ══════════════════════════════════════════ 6 ══ -->
+  <div class="section">
+    <h2>6. Subscriptions &amp; In-App Purchases</h2>
 
-<strong>7. Changes to Terms</strong>
-<p>We may update these Terms from time to time. Continued use of the Application after changes constitutes acceptance of the new Terms.</p>
+    <h3>6.1 Premium Subscription</h3>
+    <p>
+      The App offers premium features via auto-renewable subscriptions
+      (monthly and annual plans), as well as a free trial period.
+      Subscriptions are purchased through the Apple App Store or Google Play Store.
+    </p>
 
-<strong>Contact</strong>
-<p>Questions? Contact us at <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>.</p>
+    <h3>6.2 Billing</h3>
+    <p>
+      Your subscription will be charged to your Apple ID or Google Play account
+      at confirmation of purchase and will automatically renew at the end of each
+      subscription period unless auto-renew is turned off at least 24 hours before
+      the end of the current period.
+    </p>
+    <p>
+      Subscription management and billing are handled by Apple and Google respectively.
+      Payment processing for subscription verification is handled by
+      <strong>RevenueCat, Inc.</strong> Knowly does not have access to your payment details.
+    </p>
 
-<hr>
-<p><a href="index.html">Privacy Policy</a></p>
+    <h3>6.3 Free Trial</h3>
+    <p>
+      If a free trial is offered, you will not be charged during the trial period.
+      If you do not cancel before the trial ends, you will be automatically charged
+      at the applicable subscription rate.
+    </p>
+
+    <h3>6.4 Cancellation</h3>
+    <p>
+      You may cancel your subscription at any time through the App Store or Google Play
+      account settings. Cancellation takes effect at the end of the current billing period.
+      You will retain premium access until the end of the paid period.
+    </p>
+    <ul>
+      <li>Apple: Settings &gt; [your name] &gt; Subscriptions</li>
+      <li>Google: Google Play &gt; Subscriptions</li>
+    </ul>
+
+    <h3>6.5 Refunds</h3>
+    <p>
+      <strong>All subscription fees are non-refundable</strong> except as required by
+      applicable law or the policies of Apple or Google. Knowly does not process refunds
+      directly. Refund requests must be submitted to Apple or Google:
+    </p>
+    <ul>
+      <li>Apple: <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+      <li>Google: <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play Help — Refunds</a></li>
+    </ul>
+    <p>
+      Users in the European Union have the right to a 14-day "cooling off" period for
+      digital services; however, by starting to use premium features, you expressly
+      consent to the immediate provision of the service and acknowledge that you lose
+      this right of withdrawal.
+    </p>
+
+    <h3>6.6 Price Changes</h3>
+    <p>
+      Knowly reserves the right to modify subscription pricing at any time.
+      Price changes will take effect at the next renewal after notice is provided
+      via the App Store or Google Play.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 7 ══ -->
+  <div class="section">
+    <h2>7. AI-Generated Content</h2>
+    <div class="highlight-box">
+      <p>
+        <strong>Disclosure:</strong> Some audio content in the App (pronunciation examples,
+        example sentences) is generated by artificial intelligence using the
+        <strong>OpenAI Text-to-Speech API</strong>. This content is not recorded from a human
+        voice. AI-generated audio is provided for educational purposes only.
+        Knowly does not warrant the accuracy, completeness, or suitability of AI-generated
+        content for any particular purpose. You should not rely solely on AI-generated
+        audio for professional language certification or formal assessment.
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 8 ══ -->
+  <div class="section">
+    <h2>8. Intellectual Property</h2>
+    <p>
+      The App, including all content, features, design, code, lesson content, graphics,
+      sound recordings, and gamification systems, is owned by Knowly or its licensors
+      and is protected by copyright, trademark, and other applicable intellectual property laws.
+    </p>
+    <p>
+      All lesson content, phrasal verb explanations, idiom descriptions, exercises, and
+      educational materials are the proprietary content of Knowly. You may not reproduce,
+      redistribute, or commercially exploit any App content without our express written permission.
+    </p>
+    <p>
+      "Phraseman" and "Knowly" are trade names of the developer. Nothing in these Terms
+      grants you any right to use our trademarks or trade names.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 9 ══ -->
+  <div class="section">
+    <h2>9. Third-Party Services</h2>
+    <p>
+      The App integrates third-party services including Google Firebase, RevenueCat,
+      OpenAI, and Expo. Your use of these services is subject to their respective
+      terms of service and privacy policies. Knowly is not responsible for the practices
+      of any third-party service provider.
+    </p>
+    <p>
+      Links to third-party services within the App are provided for convenience only.
+      Knowly does not endorse any third-party content or services.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 10 ══ -->
+  <div class="section">
+    <h2>10. Disclaimer of Warranties</h2>
+    <div class="caps-box">
+      <strong>Important Disclaimer</strong>
+      THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND,
+      EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF
+      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR COURSE OF DEALING.
+      KNOWLY DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE
+      OF VIRUSES OR OTHER HARMFUL COMPONENTS. KNOWLY DOES NOT WARRANT THAT THE RESULTS OBTAINED
+      FROM USE OF THE APP WILL BE ACCURATE OR RELIABLE. THE APP IS PROVIDED FOR EDUCATIONAL
+      PURPOSES ONLY AND KNOWLY MAKES NO GUARANTEES REGARDING LANGUAGE LEARNING OUTCOMES.
+      YOUR USE OF THE APP IS AT YOUR SOLE RISK.
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 11 ══ -->
+  <div class="section">
+    <h2>11. Limitation of Liability</h2>
+    <div class="caps-box">
+      <strong>Limitation of Liability</strong>
+      TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL KNOWLY, ITS
+      OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, PARTNERS, SUPPLIERS, OR LICENSORS BE LIABLE
+      FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES,
+      INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR OTHER
+      INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO: (A) YOUR ACCESS TO OR USE OF
+      (OR INABILITY TO ACCESS OR USE) THE APP; (B) ANY CONDUCT OR CONTENT OF ANY THIRD
+      PARTY WITHIN THE APP; (C) ANY CONTENT OBTAINED FROM THE APP; (D) UNAUTHORIZED ACCESS,
+      USE, OR ALTERATION OF YOUR DATA; OR (E) ANY OTHER MATTER RELATING TO THE APP,
+      WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), STATUTE, OR ANY
+      OTHER LEGAL THEORY, EVEN IF KNOWLY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+      <br /><br />
+      TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, KNOWLY'S TOTAL CUMULATIVE LIABILITY
+      TO YOU FOR ALL CLAIMS ARISING FROM OR RELATING TO THE APP OR THESE TERMS SHALL NOT
+      EXCEED THE GREATER OF: (A) THE TOTAL AMOUNT YOU PAID TO KNOWLY FOR THE APP OR
+      SUBSCRIPTIONS IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE CLAIM; OR (B)
+      ONE HUNDRED US DOLLARS (USD $100).
+      <br /><br />
+      SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR
+      CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 12 ══ -->
+  <div class="section">
+    <h2>12. Indemnification</h2>
+    <p>
+      You agree to defend, indemnify, and hold harmless Knowly and its officers, directors,
+      employees, agents, and partners from and against any claims, liabilities, damages,
+      judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees)
+      arising out of or relating to: (a) your violation of these Terms; (b) your use of the App;
+      (c) your User-generated content (including your chosen nickname); (d) your violation of
+      any applicable law or regulation; or (e) your infringement of any third-party right.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 13 ══ -->
+  <div class="section">
+    <h2>13. Governing Law &amp; Jurisdiction</h2>
+    <p>
+      These Terms are governed by and construed in accordance with the laws of
+      <strong>Ukraine</strong>, without regard to its conflict of law provisions.
+      However, as the App is available worldwide, we comply with applicable consumer
+      protection laws in the jurisdictions where the App is distributed.
+    </p>
+    <p>
+      For users in the European Union: Nothing in these Terms limits your rights under
+      the mandatory consumer protection laws of your EU member state.
+    </p>
+    <p>
+      For users in the United States: California residents may have additional rights
+      under California law.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 14 ══ -->
+  <div class="section">
+    <h2>14. Dispute Resolution</h2>
+    <p>
+      Before filing any legal claim, you agree to first contact us at
+      <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>
+      and attempt to resolve the dispute informally for at least 30 days.
+    </p>
+    <p>
+      If a dispute cannot be resolved informally, it shall be submitted to the competent
+      courts of Ukraine. Users located in the European Union retain the right to bring
+      proceedings before the courts of their country of residence.
+    </p>
+    <p>
+      EU users may also use the European Commission's Online Dispute Resolution platform:
+      <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 15 ══ -->
+  <div class="section">
+    <h2>15. Termination</h2>
+    <p>
+      Knowly may suspend or terminate your access to the App at any time, without notice
+      or liability, for any reason, including if we reasonably believe you have violated
+      these Terms.
+    </p>
+    <p>
+      Upon termination: your license to use the App is revoked; your leaderboard data and
+      cloud data may be deleted; any unused subscription time is non-refundable except
+      as required by Apple's or Google's policies.
+    </p>
+    <p>
+      You may stop using the App at any time. To request deletion of your cloud data,
+      contact <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>.
+    </p>
+    <p>
+      Sections 8 (Intellectual Property), 10 (Disclaimer), 11 (Limitation of Liability),
+      12 (Indemnification), 13 (Governing Law), and 14 (Dispute Resolution)
+      shall survive termination.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 16 ══ -->
+  <div class="section">
+    <h2>16. Changes to These Terms</h2>
+    <p>
+      We reserve the right to modify these Terms at any time. When we make material changes,
+      we will update the "Last updated" date at the top and provide in-app notification where
+      practicable. Your continued use of the App after changes are posted constitutes your
+      acceptance of the revised Terms.
+    </p>
+    <p>
+      If you do not agree with revised Terms, you must stop using the App.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 17 ══ -->
+  <div class="section">
+    <h2>17. App Store — Additional Terms</h2>
+    <p>
+      If you download the App from the Apple App Store, the following additional terms apply:
+    </p>
+    <ul>
+      <li>These Terms are between you and Knowly only, not with Apple Inc.</li>
+      <li>Apple has no obligation to furnish maintenance or support for the App</li>
+      <li>In the event of any failure to conform to an applicable warranty, you may
+          notify Apple and Apple will refund the purchase price (if any); Apple has no
+          other warranty obligation</li>
+      <li>Apple is not responsible for addressing any claims relating to the App</li>
+      <li>Apple is a third-party beneficiary of these Terms and may enforce them against you</li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════════════════ 18 ══ -->
+  <div class="section">
+    <h2>18. Miscellaneous</h2>
+    <p>
+      <strong>Entire Agreement:</strong> These Terms, together with our Privacy Policy,
+      constitute the entire agreement between you and Knowly regarding the App.
+    </p>
+    <p>
+      <strong>Severability:</strong> If any provision of these Terms is found to be
+      unenforceable, that provision shall be modified to the minimum extent necessary
+      to make it enforceable, and the remaining provisions shall remain in full force.
+    </p>
+    <p>
+      <strong>No Waiver:</strong> Failure by Knowly to enforce any right or provision
+      of these Terms shall not be deemed a waiver of such right or provision.
+    </p>
+    <p>
+      <strong>Assignment:</strong> You may not assign your rights under these Terms
+      without our prior written consent. Knowly may assign its rights without restriction.
+    </p>
+    <p>
+      <strong>Contact:</strong>
+      <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ══════════════════ LOCALIZED SUMMARIES ══════════════════ -->
+  <div class="localized">
+    <p style="color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 24px;">
+      The following are condensed summaries in Russian and Ukrainian for informational purposes only.
+      The English text above is the legally binding version.
+    </p>
+
+    <div class="lang-section">
+      <h2>Русский — Краткое изложение Условий использования</h2>
+      <p>
+        Используя <strong>Phraseman</strong> от Knowly, вы соглашаетесь с этими Условиями.
+        Приложение предназначено для лиц от 13 лет. Вам предоставляется ограниченная
+        лицензия на личное использование — копирование, продажа и реверс-инжиниринг запрещены.
+        Никнейм в глобальном рейтинге <strong>виден всем пользователям</strong>.
+        Подписки (ежемесячная/ежегодная) автоматически продлеваются через App Store / Google Play.
+        Возврат средств возможен только через Apple или Google. Некоторые аудиоматериалы
+        созданы с помощью <strong>ИИ (OpenAI TTS)</strong>.
+        Приложение предоставляется «как есть»; Knowly не несёт ответственности
+        за косвенные убытки в максимально допустимых законом пределах.
+        Споры разрешаются по законодательству Украины.
+        Контакт: <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>.
+        Обновлено: 15 апреля 2026 г.
+      </p>
+    </div>
+
+    <div class="lang-section">
+      <h2>Українська — Короткий виклад Умов використання</h2>
+      <p>
+        Використовуючи <strong>Phraseman</strong> від Knowly, ви погоджуєтеся з цими Умовами.
+        Застосунок призначений для осіб від 13 років. Надається обмежена ліцензія
+        на особисте використання — копіювання, продаж та реверс-інжиніринг заборонені.
+        Нікнейм у глобальному рейтингу <strong>видно всім користувачам</strong>.
+        Підписки (щомісячна/щорічна) автоматично поновлюються через App Store / Google Play.
+        Повернення коштів можливе лише через Apple або Google. Деякі аудіоматеріали
+        створені за допомогою <strong>ШІ (OpenAI TTS)</strong>.
+        Застосунок надається «як є»; Knowly не несе відповідальності за непрямі збитки
+        у максимально допустимих законом межах.
+        Спори вирішуються за законодавством України.
+        Контакт: <a href="mailto:support.phraseman@gmail.com">support.phraseman@gmail.com</a>.
+        Оновлено: 15 квітня 2026 р.
+      </p>
+    </div>
+  </div>
+
+</div>
 </body>
 </html>
